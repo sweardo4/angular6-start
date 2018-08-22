@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+
+<p *ngFor="let a  of h ;let i=index" [attr.data-index]='i'>
+<a href=""></a>{{a}}
+</p>
+<p><a href="" [routerLink]="['/new2']">newsc</a></p>
+<button (click)='clickBtn(title)'>click</button>
+<router-outlet></router-outlet>
